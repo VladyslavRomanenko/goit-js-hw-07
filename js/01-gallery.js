@@ -1,4 +1,5 @@
 import { galleryItems } from "./gallery-items.js";
+// import * as basicLightbox from "basiclightbox";
 
 // Change code below this line
 // Сворення шаблону і додавання картинок
@@ -38,9 +39,10 @@ const handleGalleryItemClick = (event) => {
 
   const modalInstance = basicLightbox.create(`
     <div class="modal-content">
-      <img src="${imageSrc}" alt="${imageAlt}" width="900" height="700" />
+      <img src="${imageSrc}" alt="${imageAlt}" width="900" height="500" />
     </div>
   `);
+
   modalInstance.show();
 
   const divRef = document.querySelector(".modal-content");
